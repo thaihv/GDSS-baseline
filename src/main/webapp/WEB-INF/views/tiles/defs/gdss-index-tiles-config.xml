@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+    <definition name="index" extends="indexLayout">
+        <put-attribute name="content" 
+            value="/WEB-INF/views/tiles/pages/intro.jsp" />
+    </definition>
+	<definition name="indexa" extends="simpleLayout">
+		<put-attribute name="title"   value="Login" />
+		<put-attribute name="content" value="/WEB-INF/views/tiles/pages/login.jsp" />
+	</definition>	
+	
+</tiles-definitions>

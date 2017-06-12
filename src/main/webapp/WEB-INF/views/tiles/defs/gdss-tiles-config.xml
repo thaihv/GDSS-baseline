@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+   <definition name="indexLayout" template="/WEB-INF/views/tiles/layouts/index.jsp">
+        <put-attribute name="title" value="Green City Decision Support System" />
+    </definition>
+   <definition name="mainLayout" template="/WEB-INF/views/tiles/layouts/main.jsp">
+        <put-attribute name="title"    value="" />
+    	<put-attribute name="header" value="/WEB-INF/views/tiles/pages/header/header.jsp" />
+	    <put-attribute name="leftMenu" value="/WEB-INF/views/tiles/pages/menu/leftmenu.jsp" />
+	    <put-attribute name="footer" value="/WEB-INF/views/tiles/pages/footer/footer.jsp" />
+	    <put-attribute name="content"  value="" />        
+    </definition>
+    
+     <definition name="mapLayout" template="/WEB-INF/views/tiles/layouts/map.jsp">
+        <put-attribute name="title" value="Green City Decision Support System" />
+    </definition>
+    
+     <definition name="mapeditorLayout" template="/WEB-INF/views/tiles/layouts/map_editor.jsp">
+        <put-attribute name="title" value="" />
+    	<put-attribute name="header" value="/WEB-INF/views/tiles/pages/header/header.jsp" />
+    	<put-attribute name="leftMenu" value="/WEB-INF/views/tiles/pages/menu/leftmenu.jsp" />
+	    <put-attribute name="footer" value="/WEB-INF/views/tiles/pages/footer/footer.jsp" />
+	    <put-attribute name="content"  value="" />             
+    </definition>
+
+	<definition name="adminLayout" template="/WEB-INF/views/tiles/layouts/admin.jsp">
+        <put-attribute name="title" value="Green City Decision Support System" />
+    </definition>
+    
+    <definition name="userSubPopupLayout" template="/WEB-INF/views/tiles/layouts/popup.jsp">
+        <put-attribute name="title" value="popup" />
+    </definition>
+    
+    <definition name="errorLayout" template="/WEB-INF/views/tiles/layouts/simple.jsp">
+        <put-attribute name="title" value="Green City Decision Support System" />
+    </definition>
+    
+    <definition name="ajaxLayout" template="/WEB-INF/views/tiles/layouts/ajax.jsp">
+        <put-attribute name="title" value="Green City Decision Support System" />
+    </definition>
+    
+    <definition name="mobileSubLayout" template="/WEB-INF/views/tiles/layouts/mobile.jsp">
+        <put-attribute name="title" value="Green City Decision Support System" />
+    </definition>
+    
+    <definition name="simpleLayout" template="/WEB-INF/views/tiles/layouts/simple.jsp">
+        <put-attribute name="title" value="Green City Decision Support System" />
+    </definition>   
+ 
+    <definition name="extjsLayout" template="/WEB-INF/views/tiles/layouts/extjs.jsp">
+        <put-attribute name="title" value="Green City Decision Support System" />
+    </definition>            
+</tiles-definitions>

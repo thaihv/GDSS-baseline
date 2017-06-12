@@ -1,0 +1,109 @@
+.smallmap {
+   	border: 	3px solid #4682B4;
+   	position:	absolute;
+   	cursor: 	hand;
+}
+
+
+
+.olControlLoadingPanel {
+	background-image:url(../img/loading.gif);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-position:center;
+	background-repeat:no-repeat;
+	display: none;
+}
+
+
+
+.contents {
+	text-align: left!important;
+	
+}
+ul.box {
+	list-style-type: square!important;
+	padding-left: 10px;
+	margin-left: 10px;	
+	line-height: 110%;
+}
+li.notice {
+	padding-top: 5px;
+	margin-top: 5px;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+}
+#lblSurfaceNotice {
+  font: 12px Gulim, Tahoma; 
+  color: red
+}
+
+#infowin {
+  font: 12px Gulim, Tahoma; 
+  margin-left: 10px;
+}
+.erase {
+	background: transparent url(../images/erase.png) no-repeat scroll center!important;
+	width: 27px!important;
+	height: 25px!important;
+}
+.measure {
+	background: transparent url(../images/measure.png) no-repeat scroll center!important;
+	width: 27px!important;
+	height: 25px!important;
+}
+.previous {
+	background: transparent url(../images/previous.png) no-repeat scroll center!important;
+	width: 27px!important;
+	height: 25px!important;
+}
+.next {
+	background: transparent url(../images/next.png) no-repeat scroll center!important;
+	width: 27px!important;
+	height: 25px!important;
+}
+.fullextent {
+	background: transparent url(../images/fullextent.png) no-repeat scroll center!important;
+	width: 27px!important;
+	height: 25px!important;
+}
+.zoomout {
+	background: transparent url(../images/zoomout.png) no-repeat scroll center!important;
+	width: 27px!important;
+	height: 25px!important;
+}
+.zoomin {
+	background: transparent url(../images/zoomin.png) no-repeat scroll center!important;
+	width: 27px!important;
+	height: 25px!important;
+}
+.basicLayerIcon {
+	background: transparent url(../images/layer.gif) no-repeat scroll center!important;
+}
+.hsLayerIcon {
+	background: transparent url(../images/horizontal.gif) no-repeat scroll center!important;
+}
+.asLayerIcon {
+	background: transparent url(../images/approch.gif) no-repeat scroll center!important;
+}
+.csLayerIcon {
+	background: transparent url(../images/conical.gif) no-repeat scroll center!important;
+}
+.tsLayerIcon {
+	background: transparent url(../images/transition.gif) no-repeat scroll center!important;
+}
+.lsLayerIcon {
+	background: transparent url(../images/landing.gif) no-repeat scroll center!important;
+}
+
+span.x-panel-header-text, .x-tab-strip span.x-tab-strip-text, .x-tree-node-anchor  { 
+	font: 12px Gulim, Tahoma; 
+}
+.ext-ie .x-tab-strip span.x-tab-strip-text {
+	font: 12px Gulim, Tahoma; 
+}
+
+.xt_field {
+	padding: 10px;
+}

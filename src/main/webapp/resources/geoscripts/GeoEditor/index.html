@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <title>GeoEditor</title>
+        
+        <!-- IE 8 Compatibility -->
+        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+        
+        <!-- Ext resources -->
+        <link rel="stylesheet" type="text/css" href="ext/resources/css/ext-all.css" />
+        <link rel="stylesheet" type="text/css" href="ext/resources/css/xtheme-gray.css" />
+        <script type="text/javascript" src="ext/adapter/ext/ext-base.js"></script>
+        <script type="text/javascript" src="ext/ext-all.js"></script>
+
+        <!-- OpenLayers resources -->
+        <link rel="stylesheet" type="text/css" href="theme/ol/style.css" />
+        <script type="text/javascript" src="script/OpenLayers.js"></script>
+
+        <!-- GeoExt resources -->
+        <link rel="stylesheet" type="text/css" href="theme/gx/css/geoext-all-debug.css" />
+        <link rel="stylesheet" type="text/css" href="theme/gx/css/gxtheme-gray.css" />
+        <script type="text/javascript" src="script/GeoExt.js"></script> 
+
+        <!-- TODO: deal with this in a different way -->
+        <script type="text/javascript" src="script/override-ext-ajax.js"></script> 
+
+        <!-- gxp resources -->
+        <script type="text/javascript" src="script/gxp.js"></script> 
+        <link rel="stylesheet" type="text/css" href="theme/gxp/all.css" />
+
+        <!-- GeoExplorer resources -->
+        <link rel="shortcut icon" href="theme/app/img/favicon.ico"/>
+        <link rel="stylesheet" type="text/css" href="theme/app/geoexplorer.css" />
+        <!--[if IE]><link rel="stylesheet" type="text/css" href="theme/app/ie.css"/><![endif]-->
+        <script type="text/javascript" src="script/GeoExplorer.js"></script>
+        <script type="text/javascript" src="script/ux.js"></script>
+
+        <script>
+            Ext.BLANK_IMAGE_URL = "theme/app/img/blank.gif";
+            OpenLayers.Layer.WMS.prototype.DEFAULT_PARAMS.transparent = true;
+            var app = new GeoExplorer({
+                
+                /**
+                 * The alignToGrid setting forces all layers to have a max
+                 * extent of (-180, -90, 180, 90) - and only works for geographic
+                 * projections.  With alignToGrid set to false, the layer max
+                 * extent is derived from the capabilities doc (llbbox).  When
+                 * false, if a layer with a small extent is on the bottom of the
+                 * draw order, the map will be restricted to panning within that
+                 * extent.  Setting alignToGrid to true allows panning to the
+                 * global extent regardless of the lowest layer.
+                 */
+                //alignToGrid: true,
+
+                /**
+                 * The application loads capabilities from a single WMS.  The
+                 * wms value below is an absolute URL for this WMS.  Because the
+                 * application loads capabilities from a different host than the
+                 * one that serves this application, you need to configure a
+                 * proxy to have the application work.
+                 *
+                 * If you have a WMS running on the same origin as this application
+                 * you can use a relative URL and remove the proxy property below.
+                 */
+                wms: "http://localhost:8080/geonuris/wms?GDX=vncmap_900913.xml&FIXED=TRUE&GRAPHIC_BUFFER=0&ANTI=true&TEXT_ANTI=true&LABEL=HIDE_OVERLAP&REPEAT=null&DISPLAY_GAP=null",
+               //  wms: "http://192.168.10.54:8880/geonuris/wms?GDX=kais_sample.xml",
+                /**
+                 * If you do not have a WMS running on the same host that serves
+                 * this application, you need to set up a proxy.  For a proxy
+                 * that works with mod_python, see the following:
+                 * http://svn.opengeo.org/util/proxy/proxy.py
+                 *
+                 * If you do have a WMS on the same origin as this application,
+                 * provide a relative URL for the WMS above and comment out this
+                 * proxy property below.
+                 */
+                //proxy: "/proxy/?url=",
+              //  proxy: "/glop/gdx.jsp?url=",
+
+                map: {
+                    projection: "EPSG:900913",
+                    units: "m",
+                    maxResolution: 28.01312946867165,
+                    maxExtent: [
+							11774143,1116037,
+							11791502,1132513
+                    ],
+                    center: [11782729.68022, 1123586.47976],
+                    zoom: 3,
+                    layers: [{
+                        name: "GSS.RIVER_900913,GSS.CADASTRE_900913",
+                        title: "Base Map",
+                        format: "image/png"
+                    }]
+                },
+                
+                wfs: "http://localhost:8080/geonuris/wfs?GDX=vncmap_900913.xml"
+               // 	 wfs: "http://192.168.10.54:8880/geonuris/wfs?GDX=kais_sample.xml"
+
+            });
+        </script>
+
+    </head>
+    <body>
+    </body>
+</html>

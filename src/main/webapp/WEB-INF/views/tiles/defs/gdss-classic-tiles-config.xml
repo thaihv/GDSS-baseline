@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE tiles-definitions PUBLIC  
+      "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+      "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">  
+<tiles-definitions>  
+ 
+   <!-- Base Define -->
+   <definition name="base.definition" 
+       template="/WEB-INF/views/tiles/_baselayouts/classic.jsp">  
+       <put-attribute name="title" value="" />  
+       <put-attribute name="header" value="/WEB-INF/views/tiles/_basefragments/_header.jsp" />  
+       <put-attribute name="menu" value="/WEB-INF/views/tiles/_basefragments/_menu.jsp" />  
+       <put-attribute name="body" value="" />  
+       <put-attribute name="footer" value="/WEB-INF/views/tiles/_basefragments/_footer.jsp" />  
+   </definition>  
+ 
+   <!-- Home Page -->
+   <definition name="homePageClassic" extends="base.definition">  
+       <put-attribute name="title" value="Home Page" />  
+       <put-attribute name="body" value="/WEB-INF/views/tiles/_bodyfragments/_home.jsp" />  
+   </definition>  
+      
+   <!-- ContactUs Page -->
+   <definition name="contactusPageClassic" extends="base.definition">  
+       <put-attribute name="title" value="Contact Us" />  
+       <put-attribute name="body" value="/WEB-INF/views/tiles/_bodyfragments/_contactus.jsp" />  
+   </definition>  
+ 
+   <!-- Welcome Test Page of Log4j-->
+   <definition name="log4jClassic" extends="base.definition">  
+       <put-attribute name="title" value="Spring MVC and Log4j" />  
+       <put-attribute name="body" value="/WEB-INF/views/tiles/_bodyfragments/_log4j.jsp" />  
+   </definition>   
+</tiles-definitions>

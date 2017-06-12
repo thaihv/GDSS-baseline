@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+    <definition name="mapview" extends="mapLayout">
+     <put-attribute name="content" value="/WEB-INF/views/tiles/pages/map/map_view.jsp" />
+    </definition>
+    <definition name="mapedit" extends="mapeditorLayout">
+     <put-attribute name="title"    value="Edit Scenarios" />
+     <put-attribute name="content" value="/WEB-INF/views/tiles/pages/map/map_edit.jsp" />
+    </definition>
+    <definition name="mapextjs" extends="extjsLayout">
+     <put-attribute name="title"    value="GeoExtjs Mapping" />
+     <put-attribute name="content" value="/WEB-INF/views/tiles/pages/map/geoextjs.jsp" />
+    </definition>    
+    
+</tiles-definitions>

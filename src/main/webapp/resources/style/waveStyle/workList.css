@@ -1,0 +1,70 @@
+
+
+
+
+/* table */
+.tbl_type_out,.tbl_type_out th,.tbl_type_out td{border:0}
+.tbl_type_out{width:100%;border-bottom:1px solid #e5e5e5;font-size:11px;text-align:left;}
+.tbl_type_out caption{display:none}
+.tbl_type_out th{padding:2px 0 4px;border-top:2px solid #dcdcdc; border-bottom:1px solid #ccc; background-color:#f5f7f9;color:#666;font-size:12px;font-weight:bold; text-align:center;}
+
+
+
+.tbl_type,.tbl_type th,.tbl_type td{border:0; text-align:left;}
+.tbl_type{width:100%;font-size:11px;text-align:left;}
+.tbl_type:hover{background:#EDF5FE}
+.tbl_type caption{display:none}
+.tbl_type th{padding:7px 0 4px;border-top:2px solid #dcdcdc;background-color:#f5f7f9;color:#666;font-size:12px;font-weight:bold;}
+.tbl_type td{padding:0px;border-bottom:1px solid #e5e5e5;color:#4c4c4c}
+.tbl_type .a td{padding:0px;border-top:none;color:#4c4c4c}
+/* //table */
+
+/* UI Object */
+.lst_type{width:100%;padding:2px;padding-top:6px;border:none;list-style:none}
+.lst_type li{margin-bottom:5px;font-size:12px;font-weight:normal;line-height:14px;vertical-align:top;padding-right:10px;}
+.lst_type .type_ping{block;overflow:hidden;float:right;height:16px; width:16px; margin:0 3px 0 0;padding:0;background:url(../../images/waveStyle/ping.png) no-repeat 0 0;vertical-align:top;font-style:normal}
+.lst_type .type_mail{display:block;overflow:hidden;float:right;height:16px; width:16px;margin:0 3px 0 0;padding:0x;background:url(../../images/waveStyle/mail.png) no-repeat 0 0;vertical-align:top;font-style:normal}
+.lst_type .type_process{display:block;overflow:hidden;float:right;height:16px; width:16px;margin:0 3px 0 0;padding:0;background:url(../../resources/images/icon_st_on.gif) no-repeat 0 -3px;vertical-align:top;font-style:normal}
+.lst_type .instanceLock{display:block;overflow:hidden;float:right;height:16px; width:16px;margin:0 3px 0 0;padding:0;background:url(../../images/waveStyle/lock.png) no-repeat 0 0;vertical-align:top;font-style:normal}
+.lst_type .instanceUnLock{display:block;overflow:hidden;float:right;height:16px; /*width:10px;*/margin:3px 2px 0 0;padding:0;background:none;vertical-align:top;font-style:normal}
+.lst_type .instanceLocklo{display:block;overflow:hidden;float:right;height:16px; width:16px;margin:0 3px 0 0;padding:0;background:url(../../images/waveStyle/lock.png) no-repeat 0 0;vertical-align:top;font-style:normal}
+.lst_type .instanceUnLocklo{display:block;overflow:hidden;float:right;height:16px; /*width:10px;*/margin:3px 2px 0 0;padding:0;background:none;vertical-align:top;font-style:normal}
+
+
+/*
+.lst_type .type_ping em{display:block;float:left;height:17px;margin:-1px 0 0;padding:1px 5px 0 0;background:url(../../images/waveStyle/bu_listhead_ping.gif) no-repeat 100% 1px;color:#fff;font-size:11px;font-weight:normal;vertical-align:top}
+.lst_type .type_mail em{display:block;float:left;height:17px;margin:-1px 0 0;padding:1px 5px 0 0;background:url(../../images/waveStyle/bu_listhead_mail.gif) no-repeat 100% 1px;color:#fff;font-size:11px;font-weight:normal;vertical-align:top}
+.lst_type .type_process em{display:block;float:left;height:17px;margin:-1px 0 0;padding:1px 5px 0 0;background:url(../../images/waveStyle/bu_listhead.gif) no-repeat 100% 1px;color:#fff;font-size:11px;font-weight:normal;vertical-align:top}
+*/
+.lst_type li a{color:#2d2c2d;text-decoration:none}
+.lst_type li a:hover{text-decoration:underline}
+/* //UI Object */
+
+.tbl_type .first_td{width:40px;}
+.tbl_type #newInst{width:10px;}
+.tbl_type #newInst .innerNewInst{width:4px; height:35px; margin:3px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background:#FED872;
+    display:none;}
+     
+.tbl_type .last_td{width:110px; padding-right:10px;}
+.worklistuser {}
+.worklistuser dd{ margin:2px 0px 2px 3px; float:left; display:block;}
+.worklistuser dd center{font-size:11px; letter-spacing:-0.1em;}
+.instanceType{float:left;width:38px;margin-right:-40px}
+.instanceTypelo{float:left;width:20px;margin-right:-40px}
+.instanceTitle{margin-left:40px;}
+.instanceTitlelo{margin-left:10px;}
+*:first-child+html .instanceTitle{float:left}
+* html .instanceTitle{float:left}
+
+.instanceBtn{display:none;}
+
+.saidGoodUsersLine td{
+	border-top:none; padding-bottom:5px;  padding-left:71px; font-size:11px; color:#A7A7A7;
+}
+.re_saidGood em{ width:16px; height:16px; margin-right:2px; display:inline-block; background:url(../../images/waveStyle/re.gif) no-repeat 0 0;}
+
+#moreListBtn{width:100%; font-size:18px; text-align:center; background:#EEF7FF; border-bottom:1px solid #95CDFF; color:#95CDFF; height:30px; line-height:30px; cursor:pointer;/* position:absolute; bottom:0px;*/}

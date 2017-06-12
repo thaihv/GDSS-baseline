@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.uitgis.ubps.system.user.mapper.UserMapper">
+
+    <resultMap id="result" type="userVO">
+        <result property="username" column="USERNAME"/>
+        <result property="passwrd" column="PASSWORD"/>
+        <result property="fullname" column="FULLNAME"/>
+        <result property="address"  column="ADDRESS"/>
+        <result property="phone"    column="PHONE"/>
+        <result property="email"    column="EMAIL"/>
+        <result property="enabled"  column="ENABLED"/>
+    </resultMap>
+
+    <select id="getUserVO" parameterType="userVO" resultMap="result">
+		SELECT 
+			USERNAME 
+			,PASSWORD
+			,FULLNAME
+			,ADDRESS
+			,PHONE
+			,EMAIL
+			,ENABLED
+		FROM USERS
+		WHERE USERNAME = #{username}		
+    </select>
+
+	<select id="getPagingList" parameterType="userVO" resultMap="result" >		
+		SELECT  *
+		FROM    
+			(SELECT
+				USERNAME 
+				,PASSWORD
+				,FULLNAME
+				,ADDRESS
+				,PHONE
+				,EMAIL
+				,ENABLED 
+				,ROW_NUMBER() OVER ( ORDER BY 0 ) AS RN1 FROM USERS
+        	)
+	   <where>
+	      <if test = "min != null">
+	      	<![CDATA[RN1 > #{min}]]>
+	      </if>
+	      <if test = "max != null">
+	      	AND <![CDATA[RN1<= #{max}]]>
+	      </if>
+	   </where>        	
+	</select>
+
+	<select id="getListCount" resultType="int">	
+	  	SELECT COUNT(USERNAME) as COUNT 
+		FROM USERS
+	</select>	
+
+ 	<select id="getList" resultMap="result">	
+	  	SELECT 			
+	  		USERNAME
+			,PASSWORD
+			,FULLNAME
+			,ADDRESS
+			,PHONE
+			,EMAIL
+			,ENABLED 
+		FROM USERS
+	</select>
+	
+    <update id="updateUserVO" parameterType="userVO">  
+	UPDATE USERS
+		SET	
+			<if test = "username != null">
+				USERNAME = #{username}      
+   			</if>				
+			<if test = "passwrd != null">
+				,PASSWORD = #{passwrd}      
+   			</if> 
+			<if test = "fullname != null">
+				,FULLNAME = #{fullname}      
+   			</if> 
+			<if test = "address != null">
+				,ADDRESS  = #{address}      
+   			</if> 
+			<if test = "phone != null">
+				,PHONE  = #{phone}      
+   			</if> 
+			<if test = "email != null">
+				,EMAIL  = #{email}      
+   			</if> 
+			<if test = "enabled != 0">
+				,ENABLED = #{enabled}      
+   			</if>    			   			   			   				       
+    	where USERNAME = #{username}
+	</update>
+	
+	<insert id="createUserVO" parameterType="userVO">
+		INSERT INTO USERS 
+		(
+			USERNAME
+			,PASSWORD
+			,FULLNAME
+			,ADDRESS
+			,PHONE
+			,EMAIL
+			,ENABLED
+		)
+			VALUES
+		(
+			#{username}
+			,#{passwrd}
+			,#{fullname}
+			,#{address}
+			,#{phone}
+			,#{email}
+			,#{enabled}
+		)   
+	</insert>
+	
+</mapper>

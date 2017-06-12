@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+    <definition name="main" extends="mainLayout">
+		 <put-attribute name="title"   value="Home page" />
+	     <put-attribute name="content" value="/WEB-INF/views/tiles/pages/home/home.jsp" />
+    </definition>
+
+    <definition name="projects" extends="mainLayout">
+	    <put-attribute name="title"    value="Projects" />
+	    <put-attribute name="content" value="/WEB-INF/views/tiles/pages/projects.jsp" />
+    </definition>
+    <definition name="newproject" extends="mainLayout">
+	    <put-attribute name="title"    value="Create a new project" />
+	    <put-attribute name="content" value="/WEB-INF/views/tiles/pages/newproject.jsp" />
+    </definition>
+    <definition name="scenarios" extends="mainLayout">
+	    <put-attribute name="title"    value="Scenarios" />
+	    <put-attribute name="content" value="/WEB-INF/views/tiles/pages/scenarios.jsp" />
+    </definition>
+        
+    <definition name="statistic" extends="mainLayout">
+	     <put-attribute name="title"    value="Statistics" />
+	     <put-attribute name="content" value="/WEB-INF/views/tiles/pages/statistic.jsp" />
+    </definition>
+    
+    <definition name="main_newsfeed" extends="mainLayout">
+ 	    <put-attribute name="title"   value="News Feed" />
+ 	    <put-attribute name="content" value="/WEB-INF/views/tiles/pages/process/main_Newsfeed.jsp" />
+    </definition>
+    
+     <definition name="main_todo" extends="mainLayout">
+	     <put-attribute name="title"   value="DoTo List" />
+	     <put-attribute name="content" value="/WEB-INF/views/tiles/pages/process/main_Todo.jsp" />
+    </definition>
+    
+     <definition name="main_topic" extends="mainLayout">
+	     <put-attribute name="title"   value="Topics" />
+	     <put-attribute name="content" value="/WEB-INF/views/tiles/pages/process/main_Topic.jsp" />
+    </definition>
+    
+    <definition name="error" extends="errorLayout">
+        <put-attribute name="content" 
+            value="/WEB-INF/views/tiles/pages/error.jsp" />
+    </definition>
+    <definition name="404" extends="errorLayout">
+        <put-attribute name="content" 
+            value="/WEB-INF/views/tiles/pages/404.jsp" />
+    </definition>    
+    <definition name="admin" extends="mainLayout">
+    	<put-attribute name="title"    value="Administration" />
+        <put-attribute name="content" value="/WEB-INF/views/tiles/pages/admin.jsp" />
+    </definition>    
+</tiles-definitions>

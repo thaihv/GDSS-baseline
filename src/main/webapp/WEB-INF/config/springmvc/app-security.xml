@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns:sec="http://www.springframework.org/schema/security"
+	xmlns:beans="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+	http://www.springframework.org/schema/security
+	http://www.springframework.org/schema/security/spring-security-4.0.xsd">
+
+	<sec:global-method-security pre-post-annotations="enabled" secured-annotations="enabled"/>
+	<sec:http use-expressions="true">
+		<sec:intercept-url pattern="/index*.do" access="permitAll"/>
+		<sec:intercept-url pattern="/resources/**" access="permitAll"/>
+	    <sec:intercept-url pattern="/**" access="hasAnyRole('ROLE_ADMIN','ROLE_USER')"/>
+
+		<sec:form-login login-page="/indexa.do"
+			authentication-success-handler-ref="loginSuccessHandler" 
+			authentication-failure-handler-ref="loginFailureHandler"/>
+		
+		<sec:logout invalidate-session="true" success-handler-ref="logoutSuccessHandler" delete-cookies="JSESSIONID"/>
+		<sec:csrf />
+
+		<sec:remember-me token-validity-seconds="86400" remember-me-parameter="remember-me" data-source-ref="dataSource" remember-me-cookie="remember-me"/> 		
+
+	    <sec:session-management session-fixation-protection="newSession" >
+	         <sec:concurrency-control max-sessions="1" error-if-maximum-exceeded="false" session-registry-alias="sessionRegistry"/>
+	    </sec:session-management>
+	</sec:http>
+
+	<beans:bean id="loginSuccessHandler"  class="com.uitgis.ubps.system.login.controller.GdssAuthenticationSuccessHandler" />
+	<beans:bean id="loginFailureHandler"  class="com.uitgis.ubps.system.login.controller.GdssLoginFailureHandler" />
+	<beans:bean id="logoutSuccessHandler" class="com.uitgis.ubps.system.login.controller.GdssLogoutSuccessHandler" />
+	
+	
+	
+    <sec:authentication-manager alias = "am"> 
+		<sec:authentication-provider> 
+		<sec:password-encoder hash="md5" /> 
+			<sec:jdbc-user-service data-source-ref="dataSource" 
+			users-by-username-query= "SELECT username, password, enabled FROM users WHERE username = ?" 
+			authorities-by-username-query= "SELECT username, authority FROM authorities WHERE username = ?" /> 
+		</sec:authentication-provider>
+    </sec:authentication-manager>
+ 
+</beans:beans>

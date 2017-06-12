@@ -1,0 +1,556 @@
+.icon-lop-user {
+    background-image: url(../icons/fam/user.png) !important;
+}
+
+.icon-lop-user-add {
+    background-image: url(../icons/fam/user_add.gif) !important;
+}
+
+.icon-lop-save {
+    background-image: url(../icons/fam/save.gif) !important;
+}
+
+.icon-lop-reset {
+    background-image: url(../icons/fam/stop.png) !important;
+}
+
+.icon-lop-grid {
+    background-image: url(../icons/fam/grid.png) !important;
+}
+
+.icon-lop-add {
+    background-image: url(../icons/fam/add.png) !important;
+}
+
+.icon-lop-delete {
+    background-image: url(../icons/fam/delete.png) !important;
+}
+
+.icon-lop-vn {
+    background-image: url(../icons/country/vn.png) !important;
+}
+
+.icon-lop-kr {
+    background-image: url(../icons/country/kr.png) !important;
+}
+
+.icon-lop-us {
+    background-image: url(../icons/country/us.png) !important;
+}
+
+.icon-lop-printer {
+    background-image: url(../icons/fam/printer.png) !important;
+}
+
+.icon-lop-script_save {
+    background-image: url(../icons/fam/script_save.png) !important;
+}
+
+.icon-lop-page_save {
+    background-image: url(../icons/fam/page_save.png) !important;
+}
+
+.icon-lop-save {
+    background-image: url(../icons/fam/save.gif) !important;
+}
+
+.icon-lop-table_save {
+    background-image: url(../icons/fam/table_save.png) !important;
+}
+
+.icon-lop-application_view_list {
+    background-image: url(../icons/fam/application_view_list.png) !important;
+}
+
+.icon-lop-application_view_detail {
+    background-image: url(../icons/fam/application_view_detail.png) !important;
+}
+
+.icon-lop-chart_organisation {
+    background-image: url(../icons/fam/chart_organisation.png) !important;
+}
+
+.icon-lop-accept {
+    background-image: url(../icons/fam/accept.png) !important;
+}
+
+.icon-lop-application_view_tile {
+    background-image: url(../icons/fam/application_view_tile.png) !important;
+}
+
+.icon-lop-application_go {
+    background-image: url(../icons/fam/application_go.png) !important;
+}
+
+.icon-lop-disk_multiple {
+    background-image: url(../icons/fam/disk_multiple.png) !important;
+}
+
+.icon-lop-drive_disk {
+    background-image: url(../icons/fam/drive_disk.png) !important;
+}
+
+.icon-lop-email_go {
+    background-image: url(../icons/fam/email_go.png) !important;
+}
+
+.icon-lop-cross {
+    background-image: url(../icons/fam/cross.png) !important;
+}
+
+.icon-lop-page_edit {
+    background-image: url(../icons/fam/page_edit.png) !important;
+}
+
+.icon-lop-text_signature {
+    background-image: url(../icons/fam/text_signature.png) !important;
+}
+
+.icon-lop-return {
+    background-image: url(../icons/fam/return.png) !important;
+}
+
+.icon-lop-door_out {
+    background-image: url(../icons/fam/door_out.png) !important;
+}
+
+.icon-lop-user {
+    background-image: url(../icons/fam/user.png) !important;
+}
+
+.icon-lop-map {
+    background-image: url(../icons/fam/map.png) !important;
+}
+
+.icon-lop-cog {
+    background-image: url(../icons/fam/cog.png) !important;
+}
+
+.icon-lop-book_addresses {
+    background-image: url(../icons/fam/book_addresses.png) !important;
+}
+
+.icon-lop-report {
+    background-image: url(../icons/fam/report.png) !important;
+}
+
+.icon-lop-application_form_add {
+    background-image: url(../icons/fam/application_form_add.png) !important;
+}
+
+.icon-lop-table_multiple {
+    background-image: url(../icons/fam/table_multiple.png) !important;
+}
+
+.icon-lop-group {
+    background-image: url(../icons/fam/group.png) !important;
+}
+
+.icon-lop-page_excel {
+    background-image: url(../icons/fam/page_excel.png) !important;
+}
+
+
+.main-top-logo {
+	background-image: url(../images/main/logo.png);
+	background-color: #56bfcf;
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 290px;
+	height: 100px;
+}
+
+
+.main-top-middle {
+	background-image: url(../images/main/main_top_middle.jpg);	
+	background-repeat: no-repeat;
+	width: 71px;
+	height: 99px;
+}
+
+.main-top-right {
+	background-image: url(../images/main/main_top_last.jpg);	
+	background-repeat: repeat;
+}
+
+ul#topMenuList {
+	list-style-type: none;
+	white-space: nowrap;
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+	display: -moz-box;
+	-moz-box-orient: horizontal;
+	display: -ms-flexbox;
+	-ms-flex-orient: horizontal;
+	
+	display: -webkit-flex;
+	display: flex;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    -webkit-flex-direction: row;	
+	-ms-flex-direction: row;
+	
+	margin-right: 5px;
+}
+
+#topMenuList li {
+    padding-right: 15px;
+    line-height: 40px;
+    min-height: 40px;
+    /*display: inline-block;*/
+}
+
+#topMenuList li.empty {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1; /* for Mozilla */
+    -webkit-flex: 1;
+    -ms-flex: 1;      /* IE 9+*/
+     flex: 1;   
+    
+}
+
+#topMenuList li.right {
+    padding: 0 15px;
+}
+
+#topMenuList li.seperate {
+	border-right: 1px solid #999;
+}
+
+#topMenuList .userLink {
+	text-decoration: none;
+	color: white;
+	display: block;
+	font-size: 15px;
+	font-weight: bold;
+	font-family: Cambria, sans-serif; 
+}
+
+#topMenuList span {
+	padding-left: 40px;
+}
+
+#topMenuList .menuLink1 {
+	text-decoration: none;
+	color: #56bfcf;
+	display: block;
+	font-size: 17px;
+	font-weight: bold;
+	font-family: Cambria, sans-serif;
+	background-image: url(../images/main/icon_small_1.jpg);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+#topMenuList .menuLink1_select {
+	text-decoration: none;
+	color: #304d7c;
+	display: block;
+	font-size: 17px;
+	font-weight: bold;
+	font-family: Cambria, sans-serif;
+	background-image: url(../images/main/icon_small_1_1.jpg);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+#topMenuList .menuLink1:hover {
+	color: #304d7c;
+	background-image: url(../images/main/icon_small_1_1.jpg);
+}
+
+#topMenuList .menuLink2 {
+	text-decoration: none;
+	color: #56bfcf;
+	display: block;
+	font-size: 17px;
+	font-weight: bold;
+	font-family: Cambria, sans-serif;
+	background-image: url(../images/main/icon_small_2.jpg);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+#topMenuList .menuLink2_select {
+	text-decoration: none;
+	color: #304d7c;
+	display: block;
+	font-size: 17px;
+	font-weight: bold;
+	font-family: Cambria, sans-serif;
+	background-image: url(../images/main/icon_small_2_1.jpg);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+#topMenuList .menuLink2:hover {
+	color: #304d7c;
+	background-image: url(../images/main/icon_small_2_1.jpg);
+}
+
+#topMenuList .menuLink3 {
+	text-decoration: none;
+	color: #56bfcf;
+	display: block;
+	font-size: 17px;
+	font-weight: bold;
+	font-family: Cambria, sans-serif;
+	background-image: url(../images/main/icon_small_3.jpg);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+#topMenuList .menuLink3_select {
+	text-decoration: none;
+	color: #304d7c;
+	display: block;
+	font-size: 17px;
+	font-weight: bold;
+	font-family: Cambria, sans-serif;
+	background-image: url(../images/main/icon_small_3_1.jpg);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+#topMenuList .menuLink3:hover {
+	color: #304d7c;
+	background-image: url(../images/main/icon_small_3_1.jpg);
+}
+
+#topMenuList .menuLink4 {
+	text-decoration: none;
+	color: #56bfcf;
+	display: block;
+	font-size: 17px;
+	font-weight: bold;
+	font-family: Cambria, sans-serif;
+	background-image: url(../images/main/icon_small_4.jpg);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+#topMenuList .menuLink4_select {
+	text-decoration: none;
+	color: #304d7c;
+	display: block;
+	font-size: 17px;
+	font-weight: bold;
+	font-family: Cambria, sans-serif;
+	background-image: url(../images/main/icon_small_4_1.jpg);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+#topMenuList .menuLink4:hover {
+	color: #304d7c;
+	background-image: url(../images/main/icon_small_4_1.jpg);
+}
+
+#topMenuList .menuLink5 {
+	text-decoration: none;
+	color: #56bfcf;
+	display: block;
+	font-size: 17px;
+	font-weight: bold;
+	font-family: Cambria, sans-serif;
+	background-image: url(../images/main/icon_small_5.jpg);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+#topMenuList .menuLink5_select {
+	text-decoration: none;
+	color: #304d7c;
+	display: block;
+	font-size: 17px;
+	font-weight: bold;
+	font-family: Cambria, sans-serif;
+	background-image: url(../images/main/icon_small_5_1.jpg);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+#topMenuList .menuLink5:hover {
+	color: #304d7c;
+	background-image: url(../images/main/icon_small_5_1.jpg);
+}
+
+
+
+.main_left_menu > .main_left_menu_header {
+	background-image: url(../images/main/main_left_menu_header.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: #304d7c; 
+	font-family: Cambria, sans-serif;	
+	width: 290px;
+	height: 38px;
+	
+	/*text color for select item*/
+	color: #f4f4f4 !important;
+}
+
+.main_left_menu .x-panel-header {
+	padding: 10px 5px;
+}
+
+.main_left_menu .x-panel-header-default-top {
+	-webkit-box-shadow: #56bfcf 0 1px 0px 0 inset !important;
+  	-moz-box-shadow: #56bfcf 0 1px 0px 0 inset !important;
+  	-ms-box-shadow: #56bfcf 0 1px 0px 0 inset !important;
+  	box-shadow: #56bfcf 0 1px 0px 0 inset !important;
+}
+
+.main_center_panel .x-panel-header-default-top {
+	-webkit-box-shadow: #56bfcf 0 1px 0px 0 inset !important;
+  	-moz-box-shadow: #56bfcf 0 1px 0px 0 inset !important;
+  	-ms-box-shadow: #56bfcf 0 1px 0px 0 inset !important;
+  	box-shadow: #56bfcf 0 1px 0px 0 inset !important;
+}
+
+.main_left_menu .x-tool-img {
+	width: 10px;
+  	height: 11px;
+  	background-image: url(../images/main/arrow_1.gif);
+  	background-repeat: no-repeat;
+	background-position: center center;
+  	margin: 0;
+}
+
+.main_left_menu .x-tool {
+	left: 0 !important;
+}
+
+.main_left_menu .x-panel-header-text-container
+{
+    padding-left: 18px;
+    /* text color for main left menu item */
+    color:#fff;
+}
+
+.main_left_menu_header .x-tool-img {
+	width: 10px;
+  	height: 11px;
+  	background-image: url(../images/main/arrow_2.gif);
+  	background-repeat: no-repeat;
+	background-position: center center;
+  	margin: 0;
+}
+
+.main_left_menu_header .x-tool {
+	left: 0 !important;
+}
+
+.main_left_menu_header .x-panel-header-text-container
+{
+    padding-left: 18px;
+}
+
+.left_sub_menu > .main_left_sub_menu_background {
+	background-image: url(../images/main/main_left_sub_menu_background.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 290px;
+}
+
+.left_sub_menu > .main_left_sub_menu_background_select {
+	background-image: url(../images/main/main_left_sub_menu_background_s.png);
+	width: 290px;	
+}
+
+.main_left_sub_menu_background > .x-panel-header-text {
+	color: white;
+	font-family: Cambria, sans-serif;
+}
+
+.main_left_sub_menu_background_select > .x-panel-header-text {
+	color: white;
+	font-family: Cambria, sans-serif;	
+}
+
+
+.main_left_menu_border_bottom {
+	width: 290px;
+	height: 5px;
+	background-image: url(../images/main/shadow_1.png);
+	background-repeat: no-repeat;
+	background-color: #56bfcf;
+	border: 0;
+}
+
+
+.main_left_sub_menu_border_bottom {
+	width: 222px;
+	height: 4px;
+	background-image: url(../images/main/shadow_2.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	border: 0;
+	left: 0px !important;
+}
+
+.left_sub_menu .x-panel-header {
+	padding: 10px 5px;
+}
+
+.left_sub_menu > .x-panel-body-default {
+	background-color: white !important;
+}
+
+.left_sub_menu_button {
+	background: white !important;
+	/* height: 50px; */
+	padding: 10px 5px 10px 20px;
+	left: 0px !important;	
+}
+
+.left_sub_menu_button .x-btn-inner {	
+}
+
+.left_sub_menu_button_select {
+	background: white !important;
+	/* height: 50px; */
+	padding: 10px 5px 10px 20px;	
+	left: 0px !important;
+}
+
+.left_sub_menu_button_select .x-btn-inner {
+	color: #d13456 !important;
+}
+
+.left_sub_menu_button_icon {
+	background-image: url(../images/main/dot_2.gif);
+	background-repeat: no-repeat;
+	background-position: center center;	
+}
+
+.left_sub_menu_button_icon_select {
+	background-image: url(../images/main/dot_1.gif);
+	background-repeat: no-repeat;
+	background-position: center center;	
+}
+
+.main_center_panel .main_center_panel_header {
+	background-image: url(../images/main/main_left_sub_menu_background.jpg);
+}
+
+.main_center_panel .main_center_panel_header .x-panel-header-text {
+	color: white;
+	font-family: Cambria, sans-serif;
+}
+
+.testMainCls:link {
+	color: blue !important;
+}
+
+.testMainCls:visited {
+	color: blue !important;
+}
+
+.testMainCls:active {
+	color: red !important;
+}
+
+.testMainCls:hover {
+	color: red !important;
+}

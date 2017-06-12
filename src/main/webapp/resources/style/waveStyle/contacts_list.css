@@ -1,0 +1,49 @@
+
+.tabs-1 { padding:0px; font-size:11px;}
+.tabs-2 { padding:0px;}
+
+.tabs-1 ul{padding:0px;}
+.tabs-1 ul li{padding:3px;}
+.tabs-1 ul li:hover{background:#EBEBEB}
+.contactlistpic{float:left; width:30px; margin-right:8px; position:relative;}
+.contactlistpic .my_status {position: absolute; bottom:0px; right:0px; width: 14px; height: 14px;}
+.contactlistinterest{float:left;  margin-right:3px; margin-top:4px; }
+.contactlistname{float:left;cursor:pointer;font-size:11px; margin-top:3px;}
+.fontbold{font-weight:bold; line-height:15px; display:block}
+.fontgray{ color:#7F7F7F; line-height:15px;display:block; overflow:hidden;    white-space:nowrap;    text-overflow:ellipsis;    -o-text-overow: ellipsis;}
+.tabs-2 ul li{ padding:3px;}
+
+.user{margin:3px 0; cursor:pointer;}
+
+
+/* UI Object */
+.lst_type{width:580px;padding:10px;border:1px solid #c2c2c2;list-style:none}
+.lst_type li{clear:both;_height:0;margin-bottom:10px;_font-size:0}
+.lst_type2{overflow:hidden;background-color:#fff; padding:0 8px;}
+.lst_type2 dt{padding:5px 0;font-size:16px; font-weight:bolder;}
+.lst_type2 dd.tit{display:inline;float:left; margin-bottom:10px;margin-left:15px;}
+.lst_type2 dd.photo{display:inline;float:left;color:#fff;text-align:center}
+.lst_type2 dd.photo2{display:inline;float:left;color:#fff;text-align:center}
+.lst_type2 .infoSub{font-size:11px !important; font-weight: normal; margin:3px 0px; height: 17px;}
+.lst_type2 .infoSub span{display:inline-block;}
+.lst_type2 .infoSub span.infoSubFirstSpan{width:125px;}
+.lst_type2 dd{line-height:20px}
+.lst_type2 dd span{color:#808080; margin-right:15px;}
+.lst_type2 dd img{border:none}
+.lst_type2 a{color:#2d2c2d;text-decoration:none}
+.lst_type2 a:hover{text-decoration:underline}
+/* //UI Object */
+
+#favorContactCodiUsers li,
+#favorContactFbfUsers li,
+#favorContactFbgUsers li, 
+#favorContactCodiUsersAdd li, 
+#favorContactFbfUsersAdd li, 
+#favorContactFbgUsersAdd li{ 
+	padding:3px;
+}
+
+
+							
+
+#fb-auth{ position:absolute; top:2px; right:5px; width:16px; height:16px; }
