@@ -1,4 +1,4 @@
-* Initialize boilerplate code for Green city support system project
+Initialize boilerplate code for Green city support system project
 - Spring MVC 4.1.6
 - Spring Security 4.0.1
 - myBatis 3.2.2
